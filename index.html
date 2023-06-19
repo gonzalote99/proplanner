@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>proplanner</title>
+</head>
+<body>
+  <body class="body">
+  <section class="user-half row container-fluid justify-content-evenly mb-4 g-0 px-0">
+   <div class="user-input col-lg-4">
+    <form class="input-form border bg-light m-2 p-3 text-center rounded-5 shadow-4-strong">
+      <h2 class="input-header mt-3 fs-4 text-center">
+      add item to calendar
+      </h2>
+      <label for="day" class="mb-2">day a week</label>
+      <select id="day" name="day">
+       <option value="toDo" selected>to do</option>
+       <option value="sunday" >sunday</option>
+       <option value="monday" >monday</option>
+       <option value="tuesday" >tuesday</option>
+       <option value="wednesday" >wednesday</option>
+       <option value="thursday" >thursday</option>
+       <option value="friday" >friday</option>
+       <option value="saturday" >staturday</option>
+      </select>
+      <input class="inputText mb-2" type="text" />
+      <input class="sendBtn btn-rounded btn-dark btn mb-2" type="submit" value="Send" />
+
+    </form>
+    <div class="non-urgent-to-do bg-light rounded-5 shadow-4-strong mt-5">
+    <h2 class="non-urgent-to-do-title text-center mt-3 text-decoration-underline">
+     items list
+    </h2>
+    <ul class="toDoList text-center"></ul>
+    </div>
+   </div>
+  </section>
+  <section class="calendar g-0 stick-bottom bg-primary" style="--mbd-bg-opacity: 0.5">
+  <h1 class="calendar-header align-items-center text-center text-light fw-bold fs-8">
+   weekly calendar
+  </h1>
+  <div class="day-cards row row-cols-7 container-fluid justify-content-evenly g-0 px-0">
+  <div class="col-sm-7 col-lg-2 sunday-card card mt-1 border">
+  <h2 class="day-card-header text-center text-decoration-undrline m-2 fs-5"> sunday
+  </h2>
+  <ul class="sunday list"></ul>
+  </div>
+  <div class="col-sm-7 col-lg-2 monday-card card mt-1 border">
+    <h2 class="day-card-header text-center  text-decoration-undrline m-2 fs-5"> monday
+    </h2>
+    <ul class="monday list"></ul>
+    </div>
+    <div class="col-sm-7 col-lg-2 tuesday-card card mt-1 border">
+      <h2 class="day-card-header text-center text-decoration-undrline m-2 fs-5"> tuesday
+      </h2>
+      <ul class="tuesday list"></ul>
+      </div>
+      <div class="col-sm-7 col-lg-2 wednesday-card card mt-1 border">
+        <h2 class="day-card-header text-center text-decoration-undrline m-2 fs-5"> wednesday
+        </h2>
+        <ul class="wednesday list"></ul>
+        </div>
+        <div class="col-sm-7 col-lg-2 thursday-card card mt-1 border">
+          <h2 class="day-card-header text-center text-decoration-undrline m-2 fs-5"> thursday
+          </h2>
+          <ul class="thursday list"></ul>
+          </div>
+          <div class="col-sm-7 col-lg-2 friday-card card mt-1 border">
+            <h2 class="day-card-header text-center text-decoration-undrline m-2 fs-5"> friday
+            </h2>
+            <ul class="friday list"></ul>
+            </div><div class="col-sm-7 col-lg-2 saturday-card card mt-1 border">
+              <h2 class="day-card-header text-center text-decoration-undrline m-2 fs-5"> saturday
+              </h2>
+              <ul class="saturday list"></ul>
+              </div>
+  </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
+  <script src="script.js"></script>
+  </body>
+</body>
+</html>

@@ -1,0 +1,10 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url('https://raw.githubusercontent.com/Val-gee/weekly-task-manager/main/Assets/images/bettersky.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
